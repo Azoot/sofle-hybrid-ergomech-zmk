@@ -12,6 +12,16 @@
          zmk,kscan = &kscan0;
          zmk,matrix-transform = &default_transform;
      };
+
+falling_meteor_effect: zmk-led-behavior {
+        compatible = "zmk,led-strip";
+        led-type = "rgb";
+        effect = "falling-meteor";
+        speed = <100>; // Adjust speed of the falling effect
+        tail-length = <5>; // Length of the meteor tail
+        fade = <1>; // Fade-out effect after the meteor passes
+    };
+
  
      default_transform: keymap_transform_0 {
          compatible = "zmk,matrix-transform";
