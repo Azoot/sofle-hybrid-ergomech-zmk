@@ -1,8 +1,9 @@
+layout: {zmk_keyboard: sofle_ergomech}
 layers:
   default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, RET, LALT, LCTRL, lower, SPACE, MUTE, RET, SPACE, raise, RCTRL, RALT, SPACE]
+    X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
   lower:
-  - ENTER
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -44,6 +45,8 @@ layers:
   - +
   - '{'
   - '}'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '['
   - ']'
   - ;
@@ -54,8 +57,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -100,10 +101,10 @@ layers:
   - DEL
   - BSPC
   - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -160,12 +161,6 @@ layers:
   - ''
   - ''
   - ''
-  - '&studio_unlock'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - ''
   - ''
@@ -175,9 +170,15 @@ layers:
   - RGB TOG
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - ''
-  - ''
   - ''
   - ''
   - {type: held}
