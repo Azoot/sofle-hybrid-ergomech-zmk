@@ -49,7 +49,7 @@ layers:
   - .
   - /
   - RSHFT
-  - RET
+  - {t: LEFT GUI, h: RET}
   - LALT
   - LCTRL
   - SPACE
